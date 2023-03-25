@@ -1,11 +1,12 @@
 import React from 'react';
+import { addToDb } from '../../utilities/db';
 import './Cosmetic.css';
 
 const Cosmetic = (props) => {
     const {id, name, price} = props.cosmetic;
     
     const addToCart = (id) => {
-        console.log('Item added', id);
+        addToDb(id);
     }
 
     return (
