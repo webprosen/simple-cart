@@ -1,0 +1,15 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+.product{
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 25px;
+}
+.add-to-cart{
+    cursor: pointer;
+}
